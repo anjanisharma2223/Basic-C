@@ -1,12 +1,17 @@
 #include<stdio.h>
+int swap(int n,int m)
+{
+	int p=0;
+	p=n;
+	n=m;
+	m=p;
+	
+	
+}
 int main()
 {
 	int a,b;
-	printf("Enter 2 number = ");
 	scanf("%d%d",&a,&b);
-	a = a+b;
-	b = a-b;
-	a = a-b;
-	printf("a is %d and b is %d",a,b);
-	return 0;
+	printf("%d",swap(a,b));
+	printf("a = %d & b = %d",a,b);
 }
